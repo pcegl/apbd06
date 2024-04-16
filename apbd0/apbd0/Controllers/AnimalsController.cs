@@ -1,4 +1,5 @@
 ﻿using apbd0.Models;
+using apbd0.Models.DTOs;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Data.SqlClient;
 
@@ -48,5 +49,24 @@ public class AnimalsController : ControllerBase
         }
         
         return Ok(animals);
+    }
+
+    [HttpPost]
+    public IActionResult AddAnimal(AddAnimal addAnimal)
+    {
+        // Uruchamiamy połączenie do bazy
+        using SqlConnection connection = new SqlConnection(_configuration.GetConnectionString("Default"));
+        connection.Open();
+
+        //Definiujemy command
+        SqlCommand command = new SqlCommand();
+        command.Connection = connection;
+        command.CommandText = "INSERT INTO Animal VALUES(@animalName,'','','')";
+        command.Parameters.AddWithValue("@animalName", addAnimal.Name);
+        
+        // Wykonanie commanda
+        command.ExecuteNonQuery();
+        
+        return Created("", null);
     }
 }
