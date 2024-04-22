@@ -1,27 +1,25 @@
 {
   "format": 1,
   "restore": {
-    "Z:\\pceg\\APBD\\apbd06\\apbd0\\apbd0\\apbd0.csproj": {}
+    "C:\\Users\\pcegl\\OneDrive\\Pulpit\\Wykłady\\APBD\\apbd06\\apbd0\\apbd0\\apbd0.csproj": {}
   },
   "projects": {
-    "Z:\\pceg\\APBD\\apbd06\\apbd0\\apbd0\\apbd0.csproj": {
+    "C:\\Users\\pcegl\\OneDrive\\Pulpit\\Wykłady\\APBD\\apbd06\\apbd0\\apbd0\\apbd0.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "Z:\\pceg\\APBD\\apbd06\\apbd0\\apbd0\\apbd0.csproj",
+        "projectUniqueName": "C:\\Users\\pcegl\\OneDrive\\Pulpit\\Wykłady\\APBD\\apbd06\\apbd0\\apbd0\\apbd0.csproj",
         "projectName": "apbd0",
-        "projectPath": "Z:\\pceg\\APBD\\apbd06\\apbd0\\apbd0\\apbd0.csproj",
-        "packagesPath": "C:\\Users\\s28518\\.nuget\\packages\\",
-        "outputPath": "Z:\\pceg\\APBD\\apbd06\\apbd0\\apbd0\\obj\\",
+        "projectPath": "C:\\Users\\pcegl\\OneDrive\\Pulpit\\Wykłady\\APBD\\apbd06\\apbd0\\apbd0\\apbd0.csproj",
+        "packagesPath": "C:\\Users\\pcegl\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\pcegl\\OneDrive\\Pulpit\\Wykłady\\APBD\\apbd06\\apbd0\\apbd0\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\s28518\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "C:\\Users\\pcegl\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -34,11 +32,6 @@
           "warnAsError": [
             "NU1605"
           ]
-        },
-        "restoreAuditProperties": {
-          "enableAudit": "true",
-          "auditLevel": "low",
-          "auditMode": "direct"
         }
       },
       "frameworks": {
@@ -48,6 +41,10 @@
             "Microsoft.AspNetCore.OpenApi": {
               "target": "Package",
               "version": "[8.0.2, )"
+            },
+            "Microsoft.Data.SqlClient": {
+              "target": "Package",
+              "version": "[5.2.0, )"
             },
             "Swashbuckle.AspNetCore": {
               "target": "Package",
@@ -73,7 +70,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.201/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Users\\pcegl\\.dotnet\\sdk\\8.0.100/PortableRuntimeIdentifierGraph.json"
         }
       }
     }
